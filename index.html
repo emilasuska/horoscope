@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Horoscope</title>
+        <script src="myScript.js"></script>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Mali">
+        <link rel="stylesheet" href="mySheet.css"/>
+    </head>
+    <body>
+        <h1>Horoscope</h1>
+        <h2>By Emila Suska</h2>
+        <table>
+            <tbody>
+                <tr>
+                    <td>
+                        <input type="text" id="nameBox" size="25" placeholder="Enter your name"/>
+
+                        Enter your birthday:
+                        <select id="monthBox" onchange="generateDays()">
+                            <option>Select Month</option>
+                            <option>January</option>
+                            <option>February</option>
+                            <option>March</option>
+                            <option>April</option>
+                            <option>May</option>
+                            <option>June</option>
+                            <option>July</option>
+                            <option>August</option>
+                            <option>September</option>
+                            <option>October</option>
+                            <option>November</option>
+                            <option>December</option>
+                        </select>
+
+                        <select id="dayBox"></select>
+
+                        <button id="submitButton" onclick="generateHoroscope()">Submit</button>
+
+                        <div id="result1" hidden>
+                            <div id="greeting"></div>
+                            <div>Your sign is: <span id="emoji"></span> <span id="sign"></span></div>
+                            <img id="symbol"/>
+                            <img id="image"/>
+                            <div id="horoscope"></div>
+                        </div>
+                    </td>
+                    <td>
+                        <div id="result2" hidden>
+                            <img id="constellation"/>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>
